@@ -7,14 +7,14 @@ function Thermostat() {
 Thermostat.prototype.increaseTemp = function(number){
   this.temperature += number;
   if(this.isPowerSave) {
-    if (this.temperture < 26) {
+    if (this.temperature < 26) {
       return this.temperature
     } else {
       this.temperature = 25
       return this.temperature
     }
   } else {
-    if (this.temperture < 33) {
+    if (this.temperature < 33) {
       return this.temperature
     } else {
       this.temperature = 32
